@@ -1,0 +1,35 @@
+.menu{
+  width: 97%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 1rem auto;
+  align-items: center;
+  justify-content: space-between;
+  &__cart{
+    position: relative;
+  }
+  &__cart-counter {
+    background-color: #e4544c;
+    color: #fff;
+    position: absolute;
+    right: -8px;
+    top: -5px;
+    text-align: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 0.8rem;
+  }
+}
+.page{
+  @media screen and (min-width: 637px) {
+    max-width: 1200px;
+    width: 80%;
+    margin: 3rem auto;
+  }
+}

@@ -1,0 +1,89 @@
+.cart{
+  padding: 1rem;
+
+  @media screen and (min-width: 637px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    &__items{
+      grid-column: 1/3;
+    }
+  }
+}
+.cart-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "image title title"
+    "image action action"
+    "image . .";
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 1rem 0;
+  background: #f0f0f0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  &__image {
+    grid-area: image;
+  }
+  &__title {
+    grid-area: title;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+  }
+  &__action {
+    grid-area: action;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+  }
+  &__price{
+    font-weight: bold;
+  }
+  &__btns{
+    display: inline-flex;
+    align-items: center;
+  }
+  .button--float{
+    background-color: transparent;
+    &:first-child {
+      svg {
+        fill: red;
+      }
+    }
+    &:last-child {
+      svg {
+        fill: green;
+      }
+    }
+  }
+}
+
+.summary-card {
+  border-radius: 20px;
+  padding: 2rem 1rem 0 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  &__title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid #424242;
+    padding: 0.5rem 0;
+  }
+  &__btn {
+    margin: 1rem auto;
+  }
+}

@@ -1,0 +1,40 @@
+.card {
+  background: #d6d6d6;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 100%;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & &__title {
+    color: #464646;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.3em;
+    margin-bottom: 0;
+  }
+  & &__content {
+    margin: 0;
+  }
+  & &__image {
+    width: auto;
+    max-height: 14rem;
+    display: block;
+    margin: 0 auto;
+  }
+  & &__footer {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  & &__price {
+    color: #464646;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  & &__starts {
+
+  }
+}
