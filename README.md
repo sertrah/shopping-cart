@@ -1,3 +1,30 @@
+Welcome! this is a small but humilde project.
+made with love  💓
+
+# Technologies used
+    - The app was created using "Create-react-app" 
+    - Lang Typescript
+    - React router dom, for the navigation
+    - React hook form, To handle the state of the form  
+    - Scss, To provide the style of the application
+    - React Query, Fetch, cache and update data from the HTTP requests
+    - NodeJs: 14.15.4  (backend)
+
+# Application folder structure
+
+![alt text](./readmeimg.png)
+
+# last but not least:
+
+- UNIT test
+- e2e test,
+- implement SEO
+- Docs
+- global CSS variables
+- refactor. 
+
+I didn't have the time to implement these things. 😢
+
 # Prueba tecnica Front Ecomsur 2021
 
 ### Por favor, empezar la prueba después de haber leído este documento completo.
